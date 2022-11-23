@@ -1,0 +1,17 @@
+﻿<div>
+    <center>
+        <div class="col-md-9" style="background-color:#e8e8e8; height: 780px;">
+
+            <form method="Post">
+                <div class="col-md-10">
+                    <br /><br />
+                    Raio:  <input type="text" class="col-2" name="raio">
+                    <button type="submit" class="btn btn-secondary" style="float: right;" onclick="areaCirculo()" asp-action="areaCirculo">CALCULAR</button>
+                    <br /><br /><br /><br /><br /><br />
+                    <label for="exampleFormControlTextarea1"> Resultado:</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="12" style="width:80%" readonly> @ViewBag.resultado</textarea>
+                </div>
+            </form>
+        </div>
+    </center>
+</div>

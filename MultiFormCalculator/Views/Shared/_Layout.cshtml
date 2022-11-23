@@ -1,0 +1,179 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - MultiFormCalculator</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/MultiFormCalculator.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+
+
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+        <style>
+            .modal {
+                width: 300px;
+            }
+
+            .modal-content {
+                width: 300px;
+            }
+
+            .list-group-item:hover {
+                background-color: rgba(59, 57, 57, 0.164) !important;
+            }
+        </style>
+
+    </header>
+
+    <nav class="navbar navbar-light bg-light shadow">
+        <div class="container-fluid">
+            <p class="navbar-brand mb-0 h1" style="text-align:center">Calculadora MultiFórmula</p>
+            <button class="navbar-toggler" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="modal true" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">MENU</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <ul class="list-group list-group-flush">
+                        <li>
+                            <a class="list-group-item" asp-area="" asp-controller="AreaCirculo" asp-action="areaCirculo">Área Círculo</a>
+                        </li>
+                        <li>
+                            <a class="list-group-item" asp-area="" asp-controller="AreaLosango" asp-action="areaLosango">Área Losango</a>
+                        </li>
+                        <li>
+                            <a class="list-group-item" asp-area="" asp-controller="AreaQuadrado" asp-action="areaQuadrado">Área Quadrado</a>
+                        </li>
+                        <li>
+                            <a class="list-group-item" asp-area="" asp-controller="AreaRetangulo" asp-action="areaRetangulo">Área Retângulo</a>
+                        </li>
+                        <li>
+                            <a class="list-group-item" asp-area="" asp-controller="AreaTrapezio" asp-action="areaTrapezio">Área Trapézio</a>
+                        </li>
+                        <li>
+                            <a class="list-group-item" asp-area="" asp-controller="AreaTriangulo" asp-action="areaTriangulo">Área Triângulo</a>
+                        </li>
+                        <li>
+                            <a class="list-group-item" asp-area="" asp-controller="AreaTrianguloEquilatero" asp-action="areaTrianguloEquilatero">Área Triângulo Equilátero</a>
+                        </li>
+                        <li>
+                            <a class="list-group-item" asp-area="" asp-controller="Arranjo" asp-action="arranjo">Arranjo</a>
+
+                        </li>
+                        <li>
+                            <a class="list-group-item" asp-area="" asp-controller="Calorometria" asp-action="calorometria">Calorometria</a>
+
+                        </li>
+                        <li>
+                            <a class="list-group-item" asp-area="" asp-controller="Combinacao" asp-action="combinacao">Combinação</a>
+
+                        </li>
+                        <li>
+                            <a class="list-group-item" asp-area="" asp-controller="ConcentracaoMolar" asp-action="concentracaoMolar">Concentração molar</a>
+
+                        </li>
+                        <li>
+                            <a class="list-group-item" asp-area="" asp-controller="Densidade" asp-action="densidade">Densidade</a>
+
+                        </li>
+                        <li>
+                            <a class="list-group-item" asp-area="" asp-controller="Distancia" asp-action="distancia">Distância</a>
+
+                        </li>
+                        <li>
+                            <a class="list-group-item" asp-area="" asp-controller="Eletricidade" asp-action="eletricidade">Eletricidade</a>
+
+                        </li>
+                        <li>
+                            <a class="list-group-item" asp-area="" asp-controller="Empuxo" asp-action="empuxo">Empuxo</a>
+
+                        </li>
+                        <li>
+                            <a class="list-group-item" asp-area="" asp-controller="Forca" asp-action="forca">Força</a>
+
+                        </li>
+                        <li>
+                            <a class="list-group-item" asp-area="" asp-controller="Funcao1Grau" asp-action="funcao1Grau">Função do 1º grau</a>
+                        </li>
+                        <li>
+                            <a class="list-group-item" asp-area="" asp-controller="Funcao2Grau" asp-action="funcao2Grau">Função do 2º grau</a>
+                        </li>
+                        <li>
+                            <a class="list-group-item" asp-area="" asp-controller="JurosComposto" asp-action="jurosComposto">Juros composto</a>
+                        </li>                        
+                        <li>
+                            <a class="list-group-item" asp-area="" asp-controller="JurosSimples" asp-action="jurosSimples">Juros simples</a>
+                        </li>
+                        <li>
+                            <a class="list-group-item" asp-area="" asp-controller="MRU" asp-action="mru">Movimento Retilíneo Uniforme</a>
+
+                        </li>
+                        <li>
+                            <a class="list-group-item" asp-area="" asp-controller="MRUV" asp-action="mruv">Movimento Retilíneo Uniformemente Variado</a>
+
+                        </li>
+                        <li>
+                            <a class="list-group-item" asp-area="" asp-controller="NumeroMols" asp-action="numeroMols">Número de mols</a>
+
+                        </li>
+                        <li>
+                            <a class="list-group-item" asp-area="" asp-controller="Permutacao" asp-action="permutacao">Permutação</a>
+
+                        </li>
+                        <li>
+                            <a class="list-group-item" asp-area="" asp-controller="Pressao" asp-action="pressao">Pressão</a>
+
+                        </li>
+                        <li>
+                            <a class="list-group-item" asp-area="" asp-controller="TeoremaPitagoras" asp-action="teoremaPitagoras">Teorema de Pitágoras</a>
+
+                        </li>
+                        <li>
+                            <a class="list-group-item" asp-area="" asp-controller="Trabalho" asp-action="trabalho">Trabalho</a>
+
+                        </li>
+                        <li>
+                            <a class="list-group-item" asp-area="" asp-controller="Velocidade" asp-action="velocidade">Velocidade</a>
+
+                        </li>                                                                                           
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>  
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2022 - MultiFormCalculator - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
