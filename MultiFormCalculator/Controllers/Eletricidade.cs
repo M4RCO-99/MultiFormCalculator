@@ -16,11 +16,13 @@ namespace MultiFormCalculator.Controllers
             double resultado;
             string log;
 
-            log = resistenciaEletrica + " * " + intensidadeCorrente + "\n";
+            log = resistenciaEletrica + " * " + intensidadeCorrente + " * " + "10^-3" + "\n";
+            log += " " + resistenciaEletrica * intensidadeCorrente + " * " + "10^-3" + "\n";
 
             resultado = resistenciaEletrica * intensidadeCorrente;
+            resultado /= 1000;
 
-            log += " " + resultado;
+            log += " " + resultado + " V";
 
             ViewBag.resultado = log;
 

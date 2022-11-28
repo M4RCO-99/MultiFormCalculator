@@ -25,7 +25,7 @@ namespace MultiFormCalculator.Controllers
 
             resultado = ((velocidadeInicial * intervaloTempo) + ((aceleracao * (intervaloTempo * intervaloTempo)) / 2));
 
-            log += " " + resultado;
+            log += " " + resultado + " km";
 
             ViewBag.resultado = log;
 

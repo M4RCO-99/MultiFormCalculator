@@ -20,7 +20,7 @@ namespace MultiFormCalculator.Controllers
 
             resultado = numeroMol / volume;
 
-            log += " " + resultado;
+            log += " " + resultado + " mol/L";
 
             ViewBag.resultado = log;
 

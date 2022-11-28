@@ -21,7 +21,7 @@ namespace MultiFormCalculator.Controllers
 
             resultado = C * i * t;
 
-            log += " " + resultado;
+            log += " " + resultado + " reais";
 
             ViewBag.resultado = log;
 

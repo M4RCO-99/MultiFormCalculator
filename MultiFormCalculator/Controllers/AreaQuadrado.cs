@@ -20,7 +20,7 @@ namespace MultiFormCalculator.Controllers
 
             resultado = lado * lado;
 
-            log += " " + resultado;
+            log += " " + resultado + " cm²";
 
             ViewBag.resultado = log;
 

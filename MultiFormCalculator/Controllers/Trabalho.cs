@@ -20,7 +20,7 @@ namespace MultiFormCalculator.Controllers
 
             resultado = forca * deslocamento;
 
-            log += " " + resultado;
+            log += " " + resultado + " J";
 
             ViewBag.resultado = log;
 

@@ -5,10 +5,11 @@
             <form method="Post">
                 <div class="col-md-10">
                     <br /><br />
-                    Massa:  <input type="text" class="col-2" name="massa"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                    Volume:  <input type="text" class="col-2" name="volume">
-                    <button type="submit" class="btn btn-secondary" style="float: right;" onclick="densidade()" asp-action="densidade">CALCULAR</button>
-                    <br /><br /><br /><br /><br /><br />
+                    Massa:  <input type="text" placeholder="(em g)" class="col-2" name="massa"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    Volume:  <input type="text" placeholder="(em mL)" class="col-2" name="volume">
+                    <br /><br /><br />
+                    <button type="submit" class="btn btn-secondary" style="float: none;" onclick="densidade()" asp-action="densidade">CALCULAR</button>
+                    <br /><br /><br /><br />
                     <label for="exampleFormControlTextarea1"> Resultado:</label>
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="12" style="width:80%" readonly> @ViewBag.resultado</textarea>
                 </div>

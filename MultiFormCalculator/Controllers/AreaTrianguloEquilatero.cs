@@ -22,7 +22,7 @@ namespace MultiFormCalculator.Controllers
 
             resultado = 3 * (lado * lado) / 4;
 
-            log += " " + resultado;
+            log += " " + resultado + " cm²";
 
             ViewBag.resultado = log;
 

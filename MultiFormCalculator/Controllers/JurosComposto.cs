@@ -21,7 +21,9 @@ namespace MultiFormCalculator.Controllers
 
             resultado = C * (1 + i) * t;
 
-            ViewBag.resultado = resultado;
+            log += " " + resultado + " reais";
+
+            ViewBag.resultado = log;
 
             return View("jurosComposto");
         }

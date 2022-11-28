@@ -11,17 +11,16 @@ namespace MultiFormCalculator.Controllers
         }
 
         [HttpPost]
-        public IActionResult velocidade(double velocidadeInicial, double aceleração, double intervaloTempo)
+        public IActionResult velocidade(double deslocamento, double tempo)
         {
             double resultado;
             string log;
 
-            log = velocidadeInicial + " + " + aceleração + " * " + intervaloTempo + "\n";
-            log += " " + velocidadeInicial + " + " + (aceleração * intervaloTempo) + "\n";
+            log = deslocamento + " / " + tempo + "\n";
 
-            resultado = velocidadeInicial + aceleração * intervaloTempo;
+            resultado = deslocamento / tempo;
 
-            log += " " + resultado;
+            log += " " + resultado + " km/h";
 
             ViewBag.resultado = log;
 

@@ -21,7 +21,7 @@ namespace MultiFormCalculator.Controllers
 
             resultado = densidade * volumeDeslocado * aceleraçãoGravidade;
 
-            log += " " + resultado;
+            log += " " + resultado + " N";
 
             ViewBag.resultado = log;
 

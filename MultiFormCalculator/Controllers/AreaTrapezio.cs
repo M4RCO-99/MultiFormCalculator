@@ -22,7 +22,7 @@ namespace MultiFormCalculator.Controllers
 
             resultado = (baseMenor + baseMaior) * altura / 2;
 
-            log += " " + resultado;
+            log += " " + resultado + " cm²";
 
             ViewBag.resultado = log;
 

@@ -20,7 +20,7 @@ namespace MultiFormCalculator.Controllers
 
             resultado = massa * aceleracao;
 
-            log += " " + resultado;
+            log += " " + resultado + " N";
 
             ViewBag.resultado = log;
 

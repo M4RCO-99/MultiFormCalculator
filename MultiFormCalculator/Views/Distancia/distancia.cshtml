@@ -5,10 +5,11 @@
             <form method="Post">
                 <div class="col-md-10">
                     <br /><br />
-                    Velocidade:  <input type="text" class="col-2" name="velocidade"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                    Tempo:  <input type="text" class="col-2" name="tempo">
-                    <button type="submit" class="btn btn-secondary" style="float: right;" onclick="distancia()" asp-action="distancia">CALCULAR</button>
-                    <br /><br /><br /><br /><br /><br />
+                    Velocidade:  <input type="text" placeholder="(em Km/h)" class="col-2" name="velocidade"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    Tempo:  <input type="text" placeholder="(em h)" class="col-2" name="tempo">
+                    <br /><br /><br />
+                    <button type="submit" class="btn btn-secondary" style="float: none;" onclick="distancia()" asp-action="distancia">CALCULAR</button>
+                    <br /><br /><br /><br />
                     <label for="exampleFormControlTextarea1"> Resultado:</label>
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="12" style="width:80%" readonly> @ViewBag.resultado</textarea>
                 </div>

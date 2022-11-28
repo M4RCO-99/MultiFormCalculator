@@ -11,16 +11,17 @@ namespace MultiFormCalculator.Controllers
         }
 
         [HttpPost]
-        public IActionResult calorometria(double aceleracao, double massa)
+        public IActionResult calorometria(double massa, double calor, double temperatura)
         {
             double resultado;
             string log;
 
-            log = massa + " * " + aceleracao + "\n";
+            log = massa + " * " + calor + " * " + temperatura + "\n";
+            log += " " + (massa * calor) + " * " + temperatura + "\n";
 
-            resultado = massa * aceleracao;
+            resultado = massa * calor + temperatura;
 
-            log += " " + resultado;
+            log += " " + resultado + " cal";
 
             ViewBag.resultado = log;
 

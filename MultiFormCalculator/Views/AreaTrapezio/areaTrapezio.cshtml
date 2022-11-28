@@ -5,11 +5,12 @@
             <form method="Post">
                 <div class="col-md-10">
                     <br /><br />
-                    Base menor:  <input type="text" class="col-2" name="baseMenor">&nbsp
-                    Base maior:  <input type="text" class="col-2" name="baseMaior">&nbsp
-                    Altura:  <input type="text" class="col-2" name="Altura">
-                    <button type="submit" class="btn btn-secondary" style="float: right;" onclick="areaTrapezio()" asp-action="areaTrapezio">CALCULAR</button>
-                    <br /><br /><br /><br /><br /><br />
+                    Base menor:  <input type="text" placeholder="(em cm)" class="col-2" name="baseMenor">&nbsp
+                    Base maior:  <input type="text" placeholder="(em cm)" class="col-2" name="baseMaior">&nbsp
+                    Altura:  <input type="text" placeholder="(em cm)" class="col-2" name="Altura">
+                    <br /><br /><br />
+                    <button type="submit" class="btn btn-secondary" style="float: none;" onclick="areaTrapezio()" asp-action="areaTrapezio">CALCULAR</button>
+                    <br /><br /><br /><br />
                     <label for="exampleFormControlTextarea1"> Resultado:</label>
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="12" style="width:80%" readonly> @ViewBag.resultado</textarea>
                 </div>

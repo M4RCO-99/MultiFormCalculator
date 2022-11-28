@@ -5,10 +5,11 @@
             <form method="Post">
                 <div class="col-md-10">
                     <br /><br />
-                    Massa:  <input type="text" class="col-2" name="massa"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                    Aceleracao:  <input type="text" class="col-2" name="aceleracao">
-                    <button type="submit" class="btn btn-secondary" style="float: right;" onclick="forca()" asp-action="forca">CALCULAR</button>
-                    <br /><br /><br /><br /><br /><br />
+                    Massa:  <input type="text" placeholder="(em kg)" class="col-2" name="massa"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    Aceleracao:  <input type="text" placeholder="(em m/s²)" class="col-2" name="aceleracao">
+                    <br /><br /><br />
+                    <button type="submit" class="btn btn-secondary" style="float: none;" onclick="forca()" asp-action="forca">CALCULAR</button>
+                    <br /><br /><br /><br />
                     <label for="exampleFormControlTextarea1"> Resultado:</label>
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="12" style="width:80%" readonly> @ViewBag.resultado</textarea>
                 </div>
